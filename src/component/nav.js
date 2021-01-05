@@ -9,16 +9,16 @@ export class Navigation extends Component {
                 <>
                 <Nav variant="tabs" defaultActiveKey="/home">
                     <Nav.Item>
-                        <Nav.Link href="#">HOME</Nav.Link>
+                        <Nav.Link href="/">HOME</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-2">ABOUT</Nav.Link>
+                        <Nav.Link eventKey="link-2" href="/about">ABOUT</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-3">ADD</Nav.Link>
+                        <Nav.Link eventKey="link-3" href="/new">ADD</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-4">Option 4</Nav.Link>
+                        <Nav.Link eventKey="link-4" href="/digimon">Digimon</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                     {/* <Nav.Link eventKey="disabled" disabled>

@@ -4,6 +4,9 @@ import {Navigation} from './component/nav'
 import Feed from './component/feed';
 import CardDeck from 'react-bootstrap/CardDeck'
 import Card from 'react-bootstrap/Card'
+import First_SL from './state-less/First_SL'
+import First_SF from './state-full/First_SF'
+import Props from './state-full/Props'
 
 //pgs
 import {Formpg} from './component/formpg';
@@ -31,11 +34,13 @@ function App() {
                     </Card> 
                   </div>
               </Route>
-
             <Route path="/about" component={About}/>
             <Route path="/new" component={Formpg}/>
             <Route exact path="/digimon" component={Digimon}/>
             <Route path="/digimon/:id" component={DigiDetail}/>
+            <Route path="/test_sl" component={First_SL}/>
+            <Route path="/test_sf" component={First_SF}/>
+            <Route path="/props" component={Props}/>
         </Switch>
         </div>
     </Router>

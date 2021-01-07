@@ -22,7 +22,7 @@ export class Props2class extends Component {
         return (
             <div>
                 <h3>inside prps2 class practice</h3>
-                <h3 onClick ={this.changingprops}>Props: {this.state.sentence}</h3>
+                <h6 onClick ={this.changingprops}>Props: {this.state.sentence}</h6>
             </div>
         )
     }

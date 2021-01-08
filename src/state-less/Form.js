@@ -1,18 +1,19 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 
-function FormInput() {
+function FormInput(props) {
+
     return (
         <div>
             <p>Form from the form component</p>
             <Form>
                 <Form.Group controlId="formGroupEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="email" placeholder={props.value1} />
                 </Form.Group>
                 <Form.Group controlId="formGroupPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control type="password" placeholder={props.value2} />
                 </Form.Group>
             </Form>
         </div>

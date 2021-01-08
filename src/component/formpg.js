@@ -6,7 +6,7 @@ export class Formpg extends Component {
         return (
             <div>
                 <h1>FORM PAGE</h1>
-                <FormInput/>
+                <FormInput value1 = "Someusername" value2 = "SomePassword"/>
             </div>
         )
     }
